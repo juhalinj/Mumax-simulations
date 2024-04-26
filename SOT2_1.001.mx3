@@ -13,7 +13,7 @@ Aex     = 6.5e-12
 anisU   = vector(0, 0, 1)
 Ku1     = 0.70e6
 
-alpha   = 0.1 
+alpha   = 0.1
 Dind = 2.0e-3
 
 // FixDt = 5e-14
@@ -46,10 +46,9 @@ B_ext = vector(0, 0, 200.0e-3)
 
 relax()
 
+autosave(m, 5-e-10)
+AutoSnapshot(m, 5e-10)
 
-AutoSnapshot(m, 5e-10) 
-run(1e-9)
-autosave(m, 5e-10)
 
 tableAutosave(5.0e-10)
 
