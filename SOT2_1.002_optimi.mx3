@@ -1,4 +1,4 @@
-setGridSize(1024, 200, 1)
+setGridSize(1024, 1024, 1)
 setCellSize(2.5e-9, 2.5e-9, 0.8e-9)
 setPBC(32,0,0)
 
