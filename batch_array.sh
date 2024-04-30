@@ -76,7 +76,6 @@ tableAutosave(5.0e-10)
 tableAdd(ext_
 
 run(25e-9)
-echo "Hello $USER! You are on node $HOSTNAME. The time is $(date)"
 EOF
 
 # run the desired .mx3 file:
