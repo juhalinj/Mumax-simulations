@@ -55,8 +55,6 @@ AddFieldTerm(dampinglike)
 
 fieldlike := Mul(bj,p)
 AddFieldTerm(fieldlike)
-
-
 tableAdd(ext_bubblepos)
 tableAdd(ext_bubblespeed)
 tableAdd(ext_bubbledist)
