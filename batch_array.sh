@@ -3,7 +3,7 @@
 #SBATCH --time=0-2:00:00        # maximum runtime, D-HH:MM:SS
 #SBATCH --mem=1500              # memory cap (500MB seems to work most of the time)
 #SBATCH --gres=gpu:1            # 1 GPU, of any type (the crucial step for mumax)
-#SBATCH --array=4-12
+#SBATCH --array=7-11
 
 
 # load CUDA if you haven't already:
