@@ -73,8 +73,7 @@ AutoSnapshot(m, 5e-10)
 tableAutosave(5.0e-10)
 run(25e-9)
 EOF
-
 # run the desired .mx3 file:
-srun $WRKDIR/mumax3.10_linux_cuda11.0/mumax3 -cache "$WRKDIR/SOT_simulations/Cache" $WRKDIR/SOT_simulations/$PROJECTNAME/
+srun $WRKDIR/mumax3.10_linux_cuda11.0/mumax3 -cache "$WRKDIR/SOT_simulations/Cache" $WRKDIR/SOT_simulations/$PROJECTNAME/$OUTFILE
 
 
