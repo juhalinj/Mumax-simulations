@@ -9,9 +9,6 @@
 # load CUDA if you haven't already:
 module --ignore-cache load cuda/11.0
 
-# change to relevant directory:
-cd $WRKDIR/mumax3.10_linux_cuda11.0
-
 SID=$SLURM_ARRAY_TASK_ID
 PROJECTNAME="Mumax-simulations"
 MSAT="${SID}00"
