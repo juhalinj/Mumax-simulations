@@ -13,7 +13,7 @@ module --ignore-cache load cuda/11.0
 cd $WRKDIR/mumax3.10_linux_cuda11.0
 
 SID=$SLURM_ARRAY_TASK_ID
-PROJECTNAME="Magnetic_arrays"
+PROJECTNAME="Mumax-simulations"
 MSAT="${SID}00"
 OUTNAME="SOT2_{MSAT}"
 OUTFILE="${OUTNAME}.mx3"
@@ -83,6 +83,6 @@ echo "Hello $USER! You are on node $HOSTNAME. The time is $(date)"
 EOF
 
 # run the desired .mx3 file:
-srun $WRKDIR/mumax3.10_linux_cuda11.0/mumax3 -cache "$WRKDIR/SOT_simulations/Cache" $WRKDIR/SOT_simulations/Mumax-simulations/$PROJECTNAME/$OUTFOLD/$OUTFILE
+srun $WRKDIR/mumax3.10_linux_cuda11.0/mumax3 -cache "$WRKDIR/SOT_simulations/Cache" $WRKDIR/SOT_simulations/$PROJECTNAME/$OUTFOLD/$OUTFILE
 
 
