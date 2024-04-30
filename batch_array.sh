@@ -19,7 +19,7 @@ OUTNAME="SOT2_{MSAT}"
 OUTFILE="${OUTNAME}.mx3"
 OUTFOLD="${OUTNAME}.out"
 
-
+cat <<EOF > $OUTFILE
 setGridSize(1024, 1024, 1)
 setCellSize(2.5e-9, 2.5e-9, 0.8e-9)
 setPBC(32,0,0)
@@ -80,6 +80,7 @@ tableAdd(ext_
 
 run(25e-9)
 echo "Hello $USER! You are on node $HOSTNAME. The time is $(date)"
+EOF
 
 # run the desired .mx3 file:
 srun $WRKDIR/mumax3.10_linux_cuda11.0/mumax3 -cache "$WRKDIR/SOT_simulations/Cache" $WRKDIR/SOT_simulations/Mumax-simulations/$PROJECTNAME/$OUTFOLD/$OUTFILE
