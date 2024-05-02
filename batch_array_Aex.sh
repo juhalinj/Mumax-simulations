@@ -12,7 +12,7 @@ module --ignore-cache load cuda/11.0
 SID=$SLURM_ARRAY_TASK_ID
 PROJECTNAME="Mumax-simulations"
 Aex="${SID}"
-OUTNAME="SOT2_${Aex}.5e6"
+OUTNAME="SOT2_${Aex}.5e-12"
 OUTFILE="${OUTNAME}.mx3"
 OUTFOLD="${OUTNAME}.out"
 
