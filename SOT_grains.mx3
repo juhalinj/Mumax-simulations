@@ -31,7 +31,7 @@ ext_makegrains(grainSize, maxRegion, randomSeed)
 for i:=0; i<maxRegion; i++{
 	K := 0.70e6
 	Ku1.SetRegion(i, K + randNorm() * 0.10 * K)
-
+}
 // FixDt = 5e-14
 
 // Constants
