@@ -10,9 +10,9 @@
 module --ignore-cache load cuda/11.0
 
 SID=$SLURM_ARRAY_TASK_ID
-PROJECTNAME="Mumax-simulations"
+PROJECTNAME="Grain-simulations"
 randomSeed="${SID}"
-OUTNAME="SOT2_${randomSeed}.5e-12"
+OUTNAME="SOT2_orginal_${randomSeed}"
 OUTFILE="${OUTNAME}.mx3"
 OUTFOLD="${OUTNAME}.out"
 
