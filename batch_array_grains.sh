@@ -40,7 +40,7 @@ Dind = 2.0e-3
 grainSize  := 10e-9  // m
 
 // random number seed. Very to obtain different distributions
-randomSeed := ${randomSeed}
+randomseed := ${randomSeed}
 
 // There will be 255 different values of the anisotropy. Multiple grains belong to one region, and so have the same anisotropy. 
 maxRegion  := 255
