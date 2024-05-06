@@ -46,7 +46,7 @@ B_ext = vector(0, 0, 200.0e-3)
 
 relax()
 
-autosave(m, 5-e-10)
+autosave(m, 5e-10)
 AutoSnapshot(m, 5e-10)
 
 
